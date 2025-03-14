@@ -4,106 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOVLive2070 - Concert Tickets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
-        
-        body {
-            font-family: 'Open Sans', sans-serif;
-            text-align: center;
-            background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
-            color: white;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?concert,crowd') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            color: white;
+            font-size: 18px;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            color: #ffcc00;
         }
         .container {
-            max-width: 700px;
+            max-width: 900px;
             margin: 50px auto;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.85);
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
         }
         .logo {
-            width: 180px;
+            width: 200px;
         }
         .banner {
             width: 100%;
             border-radius: 10px;
-            margin-bottom: 15px;
+            margin: 20px 0;
         }
         .details {
+            font-size: 20px;
             margin: 20px 0;
-            font-size: 18px;
         }
         .button {
-            background: linear-gradient(135deg, #d62828, #a81d1d);
+            background: linear-gradient(135deg, #ffcc00, #ff6600);
             color: white;
-            padding: 15px 25px;
+            padding: 15px 30px;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 22px;
             font-weight: bold;
             border-radius: 8px;
             display: inline-block;
-            margin-top: 20px;
             transition: 0.3s;
-            box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+            box-shadow: 0 4px 10px rgba(255, 165, 0, 0.5);
         }
         .button:hover {
-            background: linear-gradient(135deg, #a81d1d, #d62828);
+            background: linear-gradient(135deg, #ff6600, #ffcc00);
             transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(255, 0, 0, 0.5);
+            box-shadow: 0 6px 15px rgba(255, 165, 0, 0.7);
         }
-        .ticket-section {
+        .footer {
             margin-top: 30px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .ticket {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            border-radius: 8px;
-            width: 30%;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-        }
-        .ticket h3 {
-            margin: 10px 0;
-            font-size: 18px;
-        }
-        .ticket p {
             font-size: 16px;
             color: #ccc;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
         }
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#tickets">Tickets</a>
+        <a href="#lineup">Lineup</a>
+        <a href="#contact">Contact</a>
+    </div>
+    
     <div class="container">
         <img src="https://iili.io/3BQhSIf.png" alt="TOVLive2070 Logo" class="logo">
-        <h1 style="font-family: 'Montserrat', sans-serif;">🎟️ TOVLive2070 - Concert Ticket Booking 🎟️</h1>
+        <h1 style="font-family: 'Montserrat', sans-serif; font-size: 36px; margin: 20px 0;">🎟️ TOVLive2070 - The Ultimate Concert Experience 🎟️</h1>
         <img src="https://iili.io/3BQNCgI.png" alt="Concert Banner" class="banner">
         <div class="details">
             <p>📍 <strong>Venue:</strong> Vadodara Exhibition Grounds</p>
             <p>📅 <strong>Date:</strong> 6th April 2070</p>
             <p>⏰ <strong>Time:</strong> 8:00 PM Onwards</p>
-            <p>🎤 <strong>Live Performance by: Top Artists</strong></p>
+            <p>🎤 <strong>Live Performances By: Top International Artists</strong></p>
         </div>
-        
-        <div class="ticket-section">
-            <div class="ticket">
-                <h3>General Pass</h3>
-                <p>₹999</p>
-            </div>
-            <div class="ticket">
-                <h3>VIP Pass</h3>
-                <p>₹2999</p>
-            </div>
-            <div class="ticket">
-                <h3>Backstage Access</h3>
-                <p>₹4999</p>
-            </div>
-        </div>
-        
         <a href="payment.html" class="button">🎟️ Book Now</a>
+    </div>
+    
+    <div class="footer">
+        &copy; 2070 TOVLive | All Rights Reserved
     </div>
 </body>
 </html>

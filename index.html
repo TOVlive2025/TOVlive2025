@@ -5,53 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOVLive2070 - Concert Tickets</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Open Sans', sans-serif;
             text-align: center;
-            background-color: #121212;
+            background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
             color: white;
             margin: 0;
             padding: 0;
         }
         .container {
-            max-width: 600px;
+            max-width: 700px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #1e1e1e;
+            background: rgba(0, 0, 0, 0.8);
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
         }
         .logo {
-            width: 200px;
+            width: 180px;
         }
         .banner {
             width: 100%;
-            border-radius: 5px;
+            border-radius: 10px;
+            margin-bottom: 15px;
         }
         .details {
             margin: 20px 0;
+            font-size: 18px;
         }
         .button {
-            background-color: #d62828;
+            background: linear-gradient(135deg, #d62828, #a81d1d);
             color: white;
             padding: 15px 25px;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
-            border-radius: 5px;
+            border-radius: 8px;
             display: inline-block;
             margin-top: 20px;
             transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
         }
         .button:hover {
-            background-color: #a81d1d;
+            background: linear-gradient(135deg, #a81d1d, #d62828);
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(255, 0, 0, 0.5);
+        }
+        .ticket-section {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .ticket {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+        .ticket h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .ticket p {
+            font-size: 16px;
+            color: #ccc;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="https://iili.io/3BQhSIf.png" alt="TOVLive2070 Logo" class="logo">
-        <h1>🎟️ TOVLive2070 - Concert Ticket Booking 🎟️</h1>
+        <h1 style="font-family: 'Montserrat', sans-serif;">🎟️ TOVLive2070 - Concert Ticket Booking 🎟️</h1>
         <img src="https://iili.io/3BQNCgI.png" alt="Concert Banner" class="banner">
         <div class="details">
             <p>📍 <strong>Venue:</strong> Vadodara Exhibition Grounds</p>
@@ -59,58 +87,23 @@
             <p>⏰ <strong>Time:</strong> 8:00 PM Onwards</p>
             <p>🎤 <strong>Live Performance by: Top Artists</strong></p>
         </div>
+        
+        <div class="ticket-section">
+            <div class="ticket">
+                <h3>General Pass</h3>
+                <p>₹999</p>
+            </div>
+            <div class="ticket">
+                <h3>VIP Pass</h3>
+                <p>₹2999</p>
+            </div>
+            <div class="ticket">
+                <h3>Backstage Access</h3>
+                <p>₹4999</p>
+            </div>
+        </div>
+        
         <a href="payment.html" class="button">🎟️ Book Now</a>
-    </div>
-</body>
-</html>
-
-<!-- Payment Page Code -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment - TOVLive2070</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #121212;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #1e1e1e;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-        }
-        .button {
-            background-color: #28a745;
-            color: white;
-            padding: 15px 25px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 20px;
-            transition: 0.3s;
-        }
-        .button:hover {
-            background-color: #218838;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>🔒 Secure Payment - TOVLive2070</h1>
-        <p>Complete your payment to confirm your ticket booking.</p>
-        <p><strong>Amount:</strong> ₹2999 (VIP Ticket)</p>
-        <a href="https://your-payment-gateway.com" class="button">💳 Pay Now</a>
     </div>
 </body>
 </html>
